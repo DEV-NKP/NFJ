@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+.home-footer{
+    background-color: #996415bd;
+}
+.home-footer-div{
+  padding: 50px 5vw;
+}
+.footer-logo{
+    width:70px;
+    height:70px;
+    filter: contrast(500%) brightness(0%);
+}
+.footer-logo-text{
+    color:#422802;
+      font-family: 'Tangerine', cursive;
+      font-size: calc(25px + 1vw);
+      
+}
+.footer-title{
+    color:#422802;
+  
+}
+.footer-option{
+    color:#3f2703b2;
+}
+.footer-copyright{
+    color:#3f2703e1;
+}
+.footer-link-icon{
+    color:#3f2703e1;
+}
+
+.footer-hr{
+    border:1px solid #3f2703e1;
+}
+.home-footer-address{
+    margin-left: 80px;
+    margin-top: -10px;
+    color: #422802bc;
+    width: 70%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px
+}
