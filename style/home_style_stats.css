@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap');
+
+
+
+.home-sec-second-div{
+    background-image: url("/public/home_image/stats-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.home-sec-second-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(2.5px); /* Adjust the blur amount as needed /
+    opacity: 0.8; / Adjust the opacity as needed */
+  }
+
+.second-sec-content-div{
+    margin-top: 10px;
+}
+
+.second-section-content-card-div{
+
+    background-color: #fdf6ef;
+    justify-content: center;
+    box-shadow: 1px 1px 15px 2px #BBA258;
+}
+
+.second-section-content-card-title{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #502800;
+}
+
+.second-section-content-card-description{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #BBA258;
+}

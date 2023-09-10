@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.dropdown-option{
+  color: #f1d29bd5 !important;
+  font-family: 'Courgette', cursive;
+  font-size: 16px!important;
+}
+.dropdown-option:hover{
+  color: #d3ad6b !important;
+  font-family: 'Courgette', cursive;
+  font-size: 16px!important;
+  border: none !important;
+}
+
+.navigation-menu{
+background-color: #502800;
+}
+
+.navigation-menu-div{
+  padding: 10px 5vw;
+}
+.navigation-logo{
+  width: 50px;
+  height: 50px;
+}
+
+.navigation-title{
+  font-family: 'Tangerine', cursive;
+font-size: calc(20px + 1vw);
+font-weight: bolder;
+  color: #d3ad6b;
+}
+
+.navigation-ul{
+  background-color: #502800;  
+  border-radius: 0px;
+}
+.navigation-ul li a{
+  color: #d3ad6b;
+    border-radius: 0px;
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+}
+.navigation-ul li a:hover{
+  color: #d3ad6b;
+  border-bottom: 2px solid #d3ad6b;
+}
+.navigation-option-selected{
+  background-color: #502800;
+  border-bottom: 2px solid #d3ad6b;
+}
+.navigation-ul li button{
+  color: #d3ad6b;
+    border-radius: 0px;
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+}
+.navigation-ul li button:hover{
+  color: #d3ad6b;
+  border-bottom: 2px solid #d3ad6b;
+}
+
+.navigation-menu-button{
+  color: #d3ad6b;
+  
+}
+
+#search-navbar{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #ffffff25;
+  color: #ffe6ba;
+  outline: none !important;
+  border-color: #d3ad6b;
+}
+#search-navbar::placeholder{
+  color: #d3ad6b;
+}
+#search-navbar::placeholder{
+  color: #d3ad6b;
+}
+#search-navbar:focus{
+  
+  color: #ffe7c3eb;
+  outline: none !important;
+  border-color: #d3ad6b;
+  box-shadow: 0 0 10px #d3ad6b;
+}

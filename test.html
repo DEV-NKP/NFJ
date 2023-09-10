@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookmark Saver</title>
+</head>
+<body>
+    <button id="saveBookmark">Save Bookmark</button>
+
+    <script>
+        document.getElementById("saveBookmark").addEventListener("click", saveBookmark);
+
+        function saveBookmark() {
+            const bookmarkUrl = window.location.href;
+            const bookmarkTitle = document.title;
+
+            // Check if localStorage is available in the browser
+            if (typeof(Storage) !== "undefined") {
+                // Get existing bookmarks or initialize an empty array if no bookmarks are saved
+                let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+
+                // Check if the bookmark is already saved
+                const existingBookmark = bookmarks.find((bookmark) => bookmark.url === bookmarkUrl);
+
+                if (!existingBookmark) {
+                    // Add the new bookmark to the array
+                    bookmarks.push({ title: bookmarkTitle, url: bookmarkUrl });
+
+                    // Save the updated bookmarks array to localStorage
+                    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+                    alert("Bookmark saved successfully!");
+                } else {
+                    alert("Bookmark already exists!");
+                }
+            } else {
+                alert("Your browser doesn't support localStorage. Unable to save the bookmark.");
+            }
+        }
+
+
+          // Function to load bookmarks from localStorage
+    function loadBookmarks() {
+      // Check if localStorage is available in the browser
+      if (typeof(Storage) !== "undefined") {
+          // Get existing bookmarks or return an empty array if no bookmarks are saved
+          return JSON.parse(localStorage.getItem("bookmarks")) || [];
+      } else {
+          // If localStorage is not supported, return an empty array
+          return [];
+      }
+  }
+
+  // Function to display the bookmark list on the page
+  function displayBookmarks() {
+      const bookmarks = loadBookmarks();
+
+      if (bookmarks.length > 0) {
+          const bookmarkList = document.createElement("ul");
+
+          bookmarks.forEach(bookmark => {
+              const listItem = document.createElement("li");
+              const link = document.createElement("a");
+              link.href = bookmark.url;
+              link.textContent = bookmark.title;
+              listItem.appendChild(link);
+              bookmarkList.appendChild(listItem);
+          });
+
+          document.body.appendChild(bookmarkList);
+      } else {
+          alert("No bookmarks saved yet!");
+      }
+  }
+
+  // Call displayBookmarks function when the page loads
+  window.addEventListener("load", displayBookmarks);
+
+
+  function deleteBookmark(urlToDelete) {
+    let bookmarks = loadBookmarks();
+
+    // Filter out the bookmark to be deleted
+    bookmarks = bookmarks.filter((bookmark) => bookmark.url !== urlToDelete);
+
+    // Save the updated bookmarks array to localStorage
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+
+    // Update the displayed bookmark list
+    displayBookmarks();
+}
+    </script>
+</body>
+</html>

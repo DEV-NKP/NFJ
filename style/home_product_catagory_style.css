@@ -1,0 +1,85 @@
+.category-section{
+    padding-top: 30px;
+    background-color: #fdf6ef;
+}
+.catagory-div{
+    width:80%;
+    margin-left: 10%;
+}
+
+.catagory-title h1{
+    font-size:25px;
+    text-align:center;
+     line-height:2em;
+       text-transform:uppercase;
+       font-family:"Playfair Display";
+       letter-spacing: 2px;
+        color:#502800;
+        font-weight: 600;
+        z-index: 5;
+}
+.catagory-title h1:before {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    left:50%;
+    margin-top:60px;
+    margin-left:-125px;
+    height: 2px;
+    content: "";
+    background-color: #502800; 
+    z-index: 1;
+  }
+  .catagory-title h1:after {
+    position:absolute;
+    width:40px;
+    height:40px; 
+    left:50%; 
+    margin-top:-12px; 
+    margin-left:-20px; 
+    content: '\00a7'; 
+    font-size:30px; 
+    line-height:40px; 
+    color:#502800;
+    font-weight:1000; 
+    z-index: 2;
+    display:block;
+    background-color:rgb(253, 246, 239);
+  }
+  
+
+.cat-title-div{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.catagory-card{
+    width:90%;
+    height:250px;
+    margin-bottom: 5%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.catagory-card img{
+    width:100%;
+    height:150px;
+}
+.cat-card-title{
+    font-size: calc(100%);
+    margin-top: 5px;
+}
+.cat-button{
+    border:2px solid #fed636b6;
+    background-color: none;
+    color: #834424;
+    border-radius: 6px;
+    font-size: calc(80%);
+    transition: 0.3s;
+}
+.catagory-card:hover{
+    border:2px solid #fed636b6;
+    box-shadow: 0 5px 15px #502800;
+}
+.catagory-card:hover .cat-button{
+    background: #edc833c5;
+}

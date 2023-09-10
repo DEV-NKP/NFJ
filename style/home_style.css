@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.home-sec-first{
+    /*background-color: #fdf6ef;*/
+    background-color: #502800;
+    overflow: hidden;
+    
+}
+.home-sec-first-div{
+padding: 10vh 2vw;
+}
+.home-first-left-div{
+   text-align: center;
+   margin: auto;
+   width: 90%;
+}
+.home-first-right-div{
+ padding-top: 5vh;   
+}
+
+.back-image{
+    margin: auto;
+
+}
+
+
+.first-sec-keyword{
+    font-family: 'Great Vibes', cursive;
+    font-size: calc(100px + 1vw);
+    color: #BBA258;
+   
+}
+.first-sec-sub-keyword{
+    font-size: calc(40px + 1vw);
+    color: #BBA258;
+}
+.first-sec-sub-keyword-div{
+margin-top: -30px;
+}
+.first-sec-moto{
+font-size: calc(15px + 1vw);
+    color: #BBA258;
+}
+.first-sec-moto-div{
+ margin-top: 8px;
+ margin-bottom: 15px;   
+}
+.first-sec-detail-div{
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.first-sec-detail{
+color: #BBA258;
+font-size: calc(10px + 0.5vw);
+}
+.first-sec-hr{
+    width: 40%;
+    margin: auto;
+    border: 1px solid #BBA258;
+}
+.first-sec-contact-button-div{
+  margin-top: 40px;  
+    margin-bottom: 10px;  
+}
+.first-sec-contact-button{
+padding: 5px 20px;
+background-color: #BBA258;
+border-radius: 20px;
+font-size: 20px;
+}
+.first-sec-design-img{
+width: 200px;
+margin: auto;
+
+}
+.first-sec-design-img-div{
+    width: 100%;
+   
+}
+
+.index-slider-button{
+    color: #BBA258;
+}
+.cat-ico{
+    width: 10%;
+    margin-right: 6px;
+}
+@media screen and (max-width: 600px) {
+    .cat-ico{
+        width:80% !important;
+        
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .cat-ico{
+        width:20% !important;
+        
+    }
+  }
